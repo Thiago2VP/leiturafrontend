@@ -1,0 +1,169 @@
+:root {
+    --background-color: #24273a;
+    --text-color: #cad3f5;
+    --blue: #8aadf4;
+    --red: #ed8796;
+    --green: #a6da95;
+    --yellow: #eed49f;
+}
+
+html {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Helvetica, Arial;
+}
+
+body {
+    position: relative;
+}
+
+main {
+    margin: auto;
+    max-width: 1200px;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    min-height: 90vh;
+}
+
+.booksGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+}
+
+.card a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.card a:hover > img {
+	border: 5px solid #b7bdf8;
+}
+
+.card a:hover > p {
+	background-color: #b7bdf8;
+}
+
+.card img {
+    height: 265px;
+	width: 160px;
+	border: 5px solid #8bd5ca;
+}
+
+.card p {
+	background-color: #8bd5ca;
+	color: #1e2030;
+    width: 170px;
+    padding: 6px 0;
+	font-weight: bold;
+    margin: 2px 0;
+}
+
+.cardOpts {
+    width: 170px;
+    margin-top: 10px;
+}
+
+.cardOpts button {
+    text-align: center;
+    width: 75px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.addChap {
+    color: var(--background-color);
+    background-color: var(--green);
+}
+
+.trash {
+    color: var(--background-color);
+    background-color: var(--red);
+}
+
+.addBook {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: none;
+}
+
+.addBook:hover {
+    color: var(--red);
+}
+
+.addBookPop {
+    position: absolute;
+    top: 10px;
+    width: 88vw;
+    height: 90vh;
+    background-color: #363a4f;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.addBookPop h1 {
+    margin-top: 60px;
+}
+
+.addBookPop form {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 240px;
+    text-align: left;
+}
+
+.addBookPop label {
+    font-size: 20px;
+    margin: 15px auto;
+}
+
+.addBookPop label input {
+    background-color: var(--text-color);
+    border: 1px solid var(--background-color);
+    color: var(--background-color);
+    font-size: 15px;
+    width: 240px;
+}
+
+.addBookPop button {
+    background-color: var(--blue);
+    color: var(--background-color);
+    width: 248px;
+    margin: 10px auto;
+    font-size: 18px;
+    border: 1px solid var(--background-color);
+    cursor: pointer;
+    text-align: center;
+}
+
+.exit {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.result {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px 30px;
+    color: var(--background-color);
+    background-color: var(--background-color);
+}
